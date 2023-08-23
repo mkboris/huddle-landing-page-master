@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero {
+  background-image: url("/images/bg-hero-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+
+@media (max-width: 640px) {
+  #hero {
+    background-image: url("/images/bg-hero-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+  }
+}
+
+#logo {
+  filter: brightness(0) invert(1);
+}
+
+.icon:hover {
+  filter: invert(21%) sepia(50%) saturate(2220%) hue-rotate(286deg)
+    brightness(50%) contrast(50%);
+}
